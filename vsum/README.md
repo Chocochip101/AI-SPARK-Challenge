@@ -18,7 +18,18 @@ https://medhini.github.io/clip_it/
 - Each video has 20 annotators that provide frame-level importance scores.
 
 
-### (3)
+### (3) OVP (Open Video Project)
+
+- Donwload: https://open-video.org/
+- 50 videos
 
 
-### (4)
+### (4) YouTube (De Avila et al., 2011)
+
+- 39 videos
+- Excluding cartoon videos
+
+
+## Evaluation Metric
+
+- F-score (protocol from Zhang et al. 2016: Video summarization with long short-term memory)
