@@ -2,5 +2,8 @@ https://medhini.github.io/clip_it/
 
 ## Datasets
 
-- TVSum: https://github.com/yalesong/tvsum
-- SumMe: 
+### (1) SumMe: 
+
+
+### (2) TVSum: https://github.com/yalesong/tvsum
+
