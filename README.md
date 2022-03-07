@@ -27,3 +27,8 @@
 
 ## More About?
 [대회 안내 Notion](https://aifactory.notion.site/3-AI-SPARK-08f0d419637b4536a8949c13af375a10)
+
+## Datasets
+
+- TVSum
+- SumMe
