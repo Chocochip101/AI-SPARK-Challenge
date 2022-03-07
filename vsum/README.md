@@ -26,6 +26,7 @@ https://medhini.github.io/clip_it/
 
 ### (4) YouTube (De Avila et al., 2011)
 
+- Download: 
 - 39 videos
 - Excluding cartoon videos
 
