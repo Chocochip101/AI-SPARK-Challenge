@@ -2,9 +2,13 @@ https://medhini.github.io/clip_it/
 
 ## Datasets
 
-### (1) SumMe: 
+### (1) SumMe (Song et al., 2015)
 
-- 
+- Download: 
+- SumMe consists of 25 user videos covering various topics such as holidays and sports et cetera.
+- Each video ranges from 1 to 6 minutes.
+- SumMe is annotated by 15 to 18 persons, thus there are multiple ground truth summaries for each video.
+
 
 ### (2) TVSum (Song et al., 2015)
 
@@ -13,3 +17,8 @@ https://medhini.github.io/clip_it/
 - The duration of each video varies from 2 to 10 minutes.
 - Each video has 20 annotators that provide frame-level importance scores.
 
+
+### (3)
+
+
+### (4)
