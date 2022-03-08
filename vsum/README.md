@@ -41,6 +41,8 @@ https://arxiv.org/pdf/2105.12532.pdf
 
 ### Links
 
+https://arxiv.org/pdf/2201.02494.pdf
+
 https://medhini.github.io/clip_it/
 
 https://github.com/KaiyangZhou/pytorch-vsumm-reinforce
