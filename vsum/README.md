@@ -1,7 +1,10 @@
-https://arxiv.org/pdf/2104.11530.pdf
+## Baseline
 
-https://arxiv.org/pdf/2105.12532.pdf
+- https://arxiv.org/pdf/2104.11530.pdf
+- https://github.com/TIBHannover/MSVA
 
+- https://arxiv.org/pdf/2105.12532.pdf
+- https://github.com/TIBHannover/UnsupervisedVideoSummarization
 
 ## Datasets
 
