@@ -1,10 +1,10 @@
 ## Baseline
 
-- https://arxiv.org/pdf/2104.11530.pdf
-- https://github.com/TIBHannover/MSVA
+- paper: https://arxiv.org/pdf/2104.11530.pdf
+- code: https://github.com/TIBHannover/MSVA
 
-- https://arxiv.org/pdf/2105.12532.pdf
-- https://github.com/TIBHannover/UnsupervisedVideoSummarization
+- paper: https://arxiv.org/pdf/2105.12532.pdf
+- code: https://github.com/TIBHannover/UnsupervisedVideoSummarization
 
 ## Datasets
 
@@ -46,6 +46,7 @@
 
 https://arxiv.org/pdf/2201.02494.pdf
 
+https://arxiv.org/pdf/2103.00020v1.pdf
 https://medhini.github.io/clip_it/
 
 https://github.com/KaiyangZhou/pytorch-vsumm-reinforce
