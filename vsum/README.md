@@ -6,7 +6,7 @@
 - paper: https://arxiv.org/pdf/2105.12532.pdf
 - code: https://github.com/TIBHannover/UnsupervisedVideoSummarization
 
-## Datasets
+## Benchmarks (for evaluation)
 
 ### (1) SumMe (Song et al., 2015)
 
