@@ -49,6 +49,10 @@ https://arxiv.org/pdf/2201.02494.pdf
 
 https://arxiv.org/pdf/2103.00020v1.pdf
 
+https://github.com/OpenAI/CLIP.
+
+
+
 https://medhini.github.io/clip_it/
 
 https://github.com/KaiyangZhou/pytorch-vsumm-reinforce
