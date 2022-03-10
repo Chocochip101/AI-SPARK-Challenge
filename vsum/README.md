@@ -10,7 +10,7 @@
 
 ### (1) SumMe (Song et al., 2015)
 
-- Download: 
+- Download: https://www.kaggle.com/brothers30sad/summe-dataset
 - SumMe consists of 25 user videos covering various topics such as holidays and sports et cetera.
 - Each video ranges from 1 to 6 minutes.
 - SumMe is annotated by 15 to 18 persons, thus there are multiple ground truth summaries for each video.
