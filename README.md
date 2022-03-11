@@ -23,7 +23,7 @@
 ## 진행 상황
 [To Do List](https://inquisitive-barge-ae2.notion.site/To-Do-List-5059e26c092d4a1b867ed780792408cc)  
 [회의록](https://inquisitive-barge-ae2.notion.site/28a4091c8f7d4e02b4d6a4a4be9c21d4)  
-[논문 정리](https://inquisitive-barge-ae2.notion.site/6249070da1ac492db830c3089a6d0eb8)
+[논문 정리](https://inquisitive-barge-ae2.notion.site/6249070da1ac492db830c3089a6d0eb8)  
 [SumMe DataSet](https://gyglim.github.io/me/vsum/index.html#sf_code)
 
 ## More About?
