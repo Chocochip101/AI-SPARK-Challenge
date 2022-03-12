@@ -6,6 +6,10 @@
 - paper: https://arxiv.org/pdf/2105.12532.pdf
 - code: https://github.com/TIBHannover/UnsupervisedVideoSummarization
 
+## Video Feature Extraction
+
+https://github.com/hobincar/pytorch-video-feature-extractor
+
 ## Benchmarks (for evaluation)
 
 ### (1) SumMe (Song et al., 2015)
