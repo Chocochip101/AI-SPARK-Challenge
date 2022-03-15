@@ -1,10 +1,17 @@
 ## Baseline
 
+### MSVA
+
 - paper: https://arxiv.org/pdf/2104.11530.pdf
 - code: https://github.com/TIBHannover/MSVA
 
+
+### Clip4clip
+- paper: https://arxiv.org/pdf/2104.08860.pdf
+- code: https://github.com/ArrowLuo/CLIP4Clip
+<!-- 
 - paper: https://arxiv.org/pdf/2105.12532.pdf
-- code: https://github.com/TIBHannover/UnsupervisedVideoSummarization
+- code: https://github.com/TIBHannover/UnsupervisedVideoSummarization -->
 
 ## Video Feature Extraction
 
