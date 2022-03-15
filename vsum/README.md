@@ -46,7 +46,7 @@ https://github.com/hobincar/pytorch-video-feature-extractor
 - F-score (protocol from Zhang et al. 2016: Video summarization with long short-term memory)
 
 
-### Links
+## Links
 
 https://arxiv.org/pdf/2201.02494.pdf
 
