@@ -6,6 +6,12 @@
 - code: https://github.com/TIBHannover/MSVA
 
 
+### Clip
+
+- paper: https://arxiv.org/pdf/2103.00020v1.pdf
+- code: https://github.com/OpenAI/CLIP  
+
+
 ### Clip4clip
 - paper: https://arxiv.org/pdf/2104.08860.pdf
 - code: https://github.com/ArrowLuo/CLIP4Clip
@@ -57,13 +63,6 @@ https://github.com/antoine77340/video_feature_extractor
 ## Links
 
 https://arxiv.org/pdf/2201.02494.pdf
-
-
-https://arxiv.org/pdf/2103.00020v1.pdf
-
-https://github.com/OpenAI/CLIP.
-
-
 
 https://medhini.github.io/clip_it/
 
