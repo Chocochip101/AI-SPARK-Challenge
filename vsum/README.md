@@ -8,7 +8,8 @@
 
 ## Video Feature Extraction
 
-https://github.com/hobincar/pytorch-video-feature-extractor
+https://github.com/hobincar/pytorch-video-feature-extractor  
+https://github.com/antoine77340/video_feature_extractor
 
 ## Benchmarks (for evaluation)
 
