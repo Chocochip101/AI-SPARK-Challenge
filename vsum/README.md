@@ -28,7 +28,7 @@ https://github.com/antoine77340/video_feature_extractor
 
 ### (1) SumMe (Song et al., 2015)
 
-- Download: https://www.kaggle.com/brothers30sad/summe-dataset
+- Download: https://gyglim.github.io/me/vsum/index.html#sf_code
 - SumMe consists of 25 user videos covering various topics such as holidays and sports et cetera.
 - Each video ranges from 1 to 6 minutes.
 - SumMe is annotated by 15 to 18 persons, thus there are multiple ground truth summaries for each video.
