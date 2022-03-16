@@ -8,9 +8,18 @@
 - 발표평가 : 2022.04.12
 
 ## 출연연 데이터 목록
-[ETRI - AI 나눔 데이터 플랫폼](https://nanum.etri.re.kr/share/list?lang=ko_KR)  
-[한국지질자원연구원 - 지오빅데이터 오픈플랫폼(kigam)](https://data.kigam.re.kr/)  
-[한국항공우주연구원 - 위성영상 객체판독 데이터](https://aihub.or.kr/aidata/7982)
+
+(1) [AI-Hub] 비디오 요약 영상: https://aihub.or.kr/aidata/27717
+
+(2) [ETRI 나눔] 한국어 음성 감정 데이터셋 (KESDy18): https://nanum.etri.re.kr/share/kjnoh/SER-DB-ETRIv18?lang=ko_KR
+
+(3) [ETRI 나눔] 음성 감정인식 데이터셋: https://nanum.etri.re.kr/share/mn99134/speechemotion?lang=ko_KR
+
+### 참고 
+
+- [ETRI - AI 나눔 데이터 플랫폼](https://nanum.etri.re.kr/share/list?lang=ko_KR)  
+- [한국지질자원연구원 - 지오빅데이터 오픈플랫폼(kigam)](https://data.kigam.re.kr/)  
+- [한국항공우주연구원 - 위성영상 객체판독 데이터](https://aihub.or.kr/aidata/7982)
 
 ### 데이터 사용시 주의 사항
 - 위 데이터 중 최소 1개 기관의 데이터를 필수적으로 사용 필요
