@@ -15,6 +15,10 @@
 
 (3) [ETRI 나눔] 음성 감정인식 데이터셋: https://nanum.etri.re.kr/share/mn99134/speechemotion?lang=ko_KR
 
+(4) SumMe DataSet: https://gyglim.github.io/me/vsum/index.html#sf_code
+
+(5) TVSum DataSet:http://people.csail.mit.edu/yalesong/tvsum/ 
+
 ### 참고 
 
 - [ETRI - AI 나눔 데이터 플랫폼](https://nanum.etri.re.kr/share/list?lang=ko_KR)  
@@ -33,7 +37,6 @@
 [To Do List](https://inquisitive-barge-ae2.notion.site/To-Do-List-5059e26c092d4a1b867ed780792408cc)  
 [회의록](https://inquisitive-barge-ae2.notion.site/28a4091c8f7d4e02b4d6a4a4be9c21d4)  
 [논문 정리](https://inquisitive-barge-ae2.notion.site/6249070da1ac492db830c3089a6d0eb8)  
-[SumMe DataSet](https://gyglim.github.io/me/vsum/index.html#sf_code)
 
 ## More About?
 [대회 안내 Notion](https://aifactory.notion.site/3-AI-SPARK-08f0d419637b4536a8949c13af375a10)
