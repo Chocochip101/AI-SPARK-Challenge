@@ -9,15 +9,19 @@
 
 ## 출연연 데이터 목록
 
+(1) [ETRI 나눔] 한국어 음성 감정 데이터셋 (KESDy18): https://nanum.etri.re.kr/share/kjnoh/SER-DB-ETRIv18?lang=ko_KR
+
+(2) [ETRI 나눔] 음성 감정인식 데이터셋: https://nanum.etri.re.kr/share/mn99134/speechemotion?lang=ko_KR
+
+
+## 외부 데이터 목록
+
 (1) [AI-Hub] 비디오 요약 영상: https://aihub.or.kr/aidata/27717
 
-(2) [ETRI 나눔] 한국어 음성 감정 데이터셋 (KESDy18): https://nanum.etri.re.kr/share/kjnoh/SER-DB-ETRIv18?lang=ko_KR
+(2) SumMe DataSet: https://gyglim.github.io/me/vsum/index.html#sf_code
 
-(3) [ETRI 나눔] 음성 감정인식 데이터셋: https://nanum.etri.re.kr/share/mn99134/speechemotion?lang=ko_KR
+(3) TVSum DataSet:http://people.csail.mit.edu/yalesong/tvsum/ 
 
-(4) SumMe DataSet: https://gyglim.github.io/me/vsum/index.html#sf_code
-
-(5) TVSum DataSet:http://people.csail.mit.edu/yalesong/tvsum/ 
 
 ### 참고 
 
