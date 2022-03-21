@@ -9,9 +9,9 @@
 
 ## 출연연 데이터 목록
 
-(1) [ETRI 나눔] 한국어 음성 감정 데이터셋 (KESDy18): https://nanum.etri.re.kr/share/kjnoh/SER-DB-ETRIv18?lang=ko_KR
+(1) [ETRI AI 나눔] 한국어 음성 감정 데이터셋 (KESDy18): https://nanum.etri.re.kr/share/kjnoh/SER-DB-ETRIv18?lang=ko_KR
 
-(2) [ETRI 나눔] 음성 감정인식 데이터셋: https://nanum.etri.re.kr/share/mn99134/speechemotion?lang=ko_KR
+(2) [ETRI AI 나눔] 음성 감정인식 데이터셋: https://nanum.etri.re.kr/share/mn99134/speechemotion?lang=ko_KR
 
 
 ## 외부 데이터 목록
