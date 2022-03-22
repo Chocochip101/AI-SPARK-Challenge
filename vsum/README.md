@@ -69,3 +69,5 @@ https://medhini.github.io/clip_it/
 https://github.com/KaiyangZhou/pytorch-vsumm-reinforce
 
 https://towardsdatascience.com/17-types-of-similarity-and-dissimilarity-measures-used-in-data-science-3eb914d2681
+
+https://arxiv.org/pdf/2112.00007.pdf
