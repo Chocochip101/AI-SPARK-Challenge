@@ -101,6 +101,7 @@ Contrastive Learning for Fair Representation, AAAI 2022
 
 
 ================================
+
 MULTIMODAL에서는 CLIP 이전 논문들 중에는 아래 논문 되게 괜찮고
 - Cross-Modal Contrastive Learning for Text-to-Image Generation, CVPR 2021
 
