@@ -1,7 +1,7 @@
 # AI-SPARK-Challenge
 제3회 연구개발특구 AI SPARK 챌린지
 
-<img src = "./0322.png" width="60%">
+<img src = "./0322.png" width="80%">
 
 ## 일정
 - 참가접수 및 예선: 2022.02.17 ~ 2022.03.17 [✔]
