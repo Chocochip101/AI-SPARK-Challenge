@@ -71,3 +71,34 @@ https://github.com/KaiyangZhou/pytorch-vsumm-reinforce
 https://towardsdatascience.com/17-types-of-similarity-and-dissimilarity-measures-used-in-data-science-3eb914d2681
 
 https://arxiv.org/pdf/2112.00007.pdf
+
+## Paper list
+
+* NLP에서는
+- CERT: Contrastive Self-supervised Learning for  Language Understanding, CORR 2020
+- Supervised Contrastive Learning for Pre-trained Language Model Fine-Tuning, ICLR 2021
+- FairFil: Contrastive Neural Debiasing Method for Pretrained Text Encoders, ICLR 2021
+- Disentangled Contrastive Learning for Learning Robust Textual Representations, CICAI 2021
+- SimCSE: Simple Contrastive Learning of Sentence Embeddings, EMNLP 2021
+- Not All Negatives are Equal: Label-Aware Contrastive Loss for Fine-grained Text Classification, EMNLP 2021
+- Self-Guided Contrastive Learning for BERT Sentence Representations, IJCNLP 2021
+- DeCLUTR: Deep Contrastive Learning for Unsupervised Textual Representations, IJCNLP 2021
+Contrastive Learning for Fair Representation, AAAI 2022
+- SimSCL : A Simple fully-Supervised Contrastive Learning Framework for Text Representation, AJCAI 2022
+
+
+===============================
+* VISION에서는 너무많은데 핵심논문은 아래 정도?
+[2] representation learning with contrastive predictive coding, arXiv 2018
+[8] Unsupervised Feature Learning via Non-Parametric Instance Discrimination, CVPR 2018
+[1] a simple framework for contrastive learning of visual representations, ICML 2020
+[3] understanding contrastive representation learning through alignment and uniformity on the hypersphere, ICML 2020
+[11] Momentum Contrast for Unsupervised Visual Representation Learning, CVPR 2020
+[12] Supervised Contrastive Learning, NIPS 2020
+
+
+================================
+MULTIMODAL에서는 CLIP 이전 논문들 중에는 아래 논문 되게 괜찮고
+- Cross-Modal Contrastive Learning for Text-to-Image Generation, CVPR 2021
+
+CLIP 이후로는 그냥 CLIP 인용논문내에서 형 관심 키워드 쳐서 같이 찾으면 많이나올듯!
