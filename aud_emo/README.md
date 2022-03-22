@@ -1,1 +1,1 @@
-gd
+- https://arxiv.org/pdf/1904.08779.pdf
