@@ -72,6 +72,8 @@ https://towardsdatascience.com/17-types-of-similarity-and-dissimilarity-measures
 
 https://arxiv.org/pdf/2112.00007.pdf
 
+https://velog.io/@jkl133/temperature-parameter-in-learner-fastai
+
 ## Paper list
 
 * NLP에서는
