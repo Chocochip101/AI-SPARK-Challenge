@@ -24,7 +24,7 @@
 
 (3) TVSum DataSet:http://people.csail.mit.edu/yalesong/tvsum/ 
 
-
+  
 ### 참고 
 
 - [ETRI - AI 나눔 데이터 플랫폼](https://nanum.etri.re.kr/share/list?lang=ko_KR)  
@@ -38,6 +38,9 @@
 - 각 데이터의 활용범위 및 다운로드 방법은 데이터별 카드 내 상세 활용범위 참고
     - ex) etri 나눔데이터는 데이터 등록자와 ‘협약서 체결'이 필요한 경우가 있음
 - 1개 이상의 출연연 데이터를 반드시 활용하되, 기타 데이터 융합은 자유롭게 제안 가능
+
+### 리더보드 제출 방법
+[PDF File](./3%ED%9A%8C%20AI%20SPARK%20%EC%B1%8C%EB%A6%B0%EC%A7%80_%ED%83%9C%EC%8A%A4%ED%81%AC%20%EC%83%9D%EC%84%B1%20%EB%A7%A4%EB%89%B4%EC%96%BC.pdf)
 
 ## 진행 상황
 [To Do List](https://inquisitive-barge-ae2.notion.site/To-Do-List-5059e26c092d4a1b867ed780792408cc)  
