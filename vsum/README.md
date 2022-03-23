@@ -19,6 +19,8 @@
 - paper: https://arxiv.org/pdf/2105.12532.pdf
 - code: https://github.com/TIBHannover/UnsupervisedVideoSummarization -->
 
+### https://github.com/habla-liaa/ser-with-w2v2
+
 ## Video Feature Extraction
 
 https://github.com/hobincar/pytorch-video-feature-extractor  
