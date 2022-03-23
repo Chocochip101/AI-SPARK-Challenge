@@ -4,4 +4,6 @@
 
 - receptive field: https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=sogangori&logNo=220952339643
 
+- https://github.com/MeidanGR/SpeechEmotionRecognition_Realtime
+
 - https://github.com/DINFBO/aicare/
