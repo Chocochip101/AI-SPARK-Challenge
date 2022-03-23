@@ -4,6 +4,13 @@
 
 - receptive field: https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=sogangori&logNo=220952339643
 
+
+### baseline candidates
+
+- https://github.com/x4nth055/emotion-recognition-using-speech
+
 - https://github.com/MeidanGR/SpeechEmotionRecognition_Realtime
 
 - https://github.com/DINFBO/aicare/
+
+- https://github.com/RoccoJay/Audio_to_Emotion
