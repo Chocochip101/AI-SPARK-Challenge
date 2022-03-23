@@ -24,6 +24,10 @@
 
 (3) TVSum DataSet:http://people.csail.mit.edu/yalesong/tvsum/ 
 
+(4) IEMOCAP: 
+
+(5) RAVDESS: 
+  
   
 ### 참고 
 
