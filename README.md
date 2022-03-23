@@ -22,7 +22,7 @@
 
 (2) SumMe DataSet: https://gyglim.github.io/me/vsum/index.html#sf_code
 
-(3) TVSum DataSet:http://people.csail.mit.edu/yalesong/tvsum/ 
+(3) TVSum DataSet: http://people.csail.mit.edu/yalesong/tvsum/ 
 
 (4) IEMOCAP: 
 
