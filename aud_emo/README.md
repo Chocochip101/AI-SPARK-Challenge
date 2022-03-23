@@ -9,6 +9,8 @@
 
 ### baseline candidates
 
+- https://github.com/m3hrdadfi/soxan
+
 - https://github.com/x4nth055/emotion-recognition-using-speech
 
 - https://github.com/MeidanGR/SpeechEmotionRecognition_Realtime
