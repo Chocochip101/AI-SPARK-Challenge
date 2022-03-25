@@ -68,6 +68,8 @@ https://github.com/antoine77340/video_feature_extractor
 
 ## Links
 
+https://arxiv.org/pdf/2006.13979.pdf
+
 https://arxiv.org/pdf/2201.02494.pdf
 
 https://medhini.github.io/clip_it/
