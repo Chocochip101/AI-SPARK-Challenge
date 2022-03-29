@@ -26,7 +26,7 @@
 
 (4) RAVDESS: https://zenodo.org/record/1188976#.YkKRQHpByUk  
 
-(5) IEMOCAP: https://sail.usc.edu/iemocap/
+(5) IEMOCAP: https://www.kaggle.com/datasets/jamaliasultanajisha/iemocap-full
   
   
 ### 참고 
