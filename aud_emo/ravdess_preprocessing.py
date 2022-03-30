@@ -56,5 +56,5 @@ for path in tqdm(Path(ravdess_path).glob("**/*.wav")):
   except Exception as e:
     pass
   
-df = pd.DataFrame(data)
+df = pd.DataFrame(ravdess_data)
 print(df.head())
