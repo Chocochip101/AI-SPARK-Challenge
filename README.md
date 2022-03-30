@@ -54,5 +54,5 @@
 ## More About?
 [대회 안내 Notion](https://aifactory.notion.site/3-AI-SPARK-08f0d419637b4536a8949c13af375a10)
 
-[코랩 런타임 오류 방지법](https://brother-big.tistory.com/11)
+[코랩 런타임 오류 방지법](https://hanryang1125.tistory.com/31)
 
