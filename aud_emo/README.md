@@ -6,6 +6,8 @@
 
 - receptive field: https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=sogangori&logNo=220952339643
 
+- RAVDESS preprocessing: https://towardsdatascience.com/speech-emotion-recognition-using-ravdess-audio-dataset-ce19d162690
+
 
 ### baseline candidates
 
