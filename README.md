@@ -9,7 +9,7 @@
 - 본선 : 2022. 03. 22 ~ 2022. 04. 08.
 - 발표평가 : 2022.04.12
 
-## Web page
+## 웹페이지
 
 - https://jeiyoon.github.io/spark/
 
