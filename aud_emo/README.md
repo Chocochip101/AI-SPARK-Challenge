@@ -11,11 +11,6 @@
 - RAVDESS preprocessing: https://towardsdatascience.com/speech-emotion-recognition-using-ravdess-audio-dataset-ce19d162690
 
 
-### Dataset
-
-- About RAVDESS: https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio
-
-- About 
 
 ### baseline candidates
 
