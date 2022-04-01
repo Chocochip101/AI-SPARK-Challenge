@@ -1,5 +1,7 @@
 - SpecAugment: A Simple Data Augmentation Method for Automatic Speech Recognition: https://arxiv.org/pdf/1904.08779.pdf
 
+- SpecAugment implementation: https://github.com/zcaceres/spec_augment
+
 - Emotion Recognition from Speech Using Wav2vec 2.0 Embeddings: https://arxiv.org/pdf/2104.03502.pdf
 
 - wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations: https://arxiv.org/pdf/2006.11477.pdf
