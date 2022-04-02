@@ -82,6 +82,8 @@ https://arxiv.org/pdf/2112.00007.pdf
 
 https://velog.io/@jkl133/temperature-parameter-in-learner-fastai
 
+https://arxiv.org/pdf/2109.14084.pdf
+
 ## Paper list (contrastive learning)
 
 * NLP에서는
