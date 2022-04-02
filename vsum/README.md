@@ -61,10 +61,7 @@ https://github.com/antoine77340/video_feature_extractor
 
 - F-score (protocol from Zhang et al. 2016: Video summarization with long short-term memory)
 
-- https://arxiv.org/pdf/2109.06822.pdf
-
-- https://arxiv.org/pdf/2007.14560.pdf
-
+- [New Metric](https://github.com/Chocochip101/AI-SPARK-Challenge/tree/main/metric)
 
 ## Links
 
