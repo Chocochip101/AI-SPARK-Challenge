@@ -16,8 +16,7 @@ pred = pd.read_csv(sys.argv[2]).to_numpy()[:,1:].astype(int).reshape(-1, 1) # �
 테이블 형태로 불러옵니다.
 gt = pd.read_csv(sys.argv[1]).to_numpy()[:,1:].astype(int).reshape(-1, 1) # 정답파일을 .csv 테이블 형태로
 불러옵니다.
-# 제출 결과 및 정답 파일 경로는
-자동으로 설정되므로 직접 입력하지 말고 비워두시면 됩니다.
+# 제출 결과 및 정답 파일 경로는 자동으로 설정되므로 직접 입력하지 말고 비워두시면 됩니다.
 # 스코어 산출
 score = accuracy_score(gt, pred) # 위에서 가져온 함수에 불러온 정답 테이블 및 결과 테이블을 입력하여 스코어를
 계산합니다.
