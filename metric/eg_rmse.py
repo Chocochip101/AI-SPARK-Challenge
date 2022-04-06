@@ -9,7 +9,7 @@ import numpy as np
 # 편집할 구간: 채점에 사용할 함수 정의
 # rmse: 점수를 계산할 함수입니다. 정답(y_true), 예측(y_pred)을 인자로 입력받아 score를 반환합니다.
 def rmse(y_true, y_pred):
-return np.sqrt(((y_pred - y_true) ** 2).mean())
+  return np.sqrt(((y_pred - y_true) ** 2).mean())
 ###############################################################################
 # 해당 코드가 전달받는 인자들의 목록입니다.
 # sys.argv[1]: 업로드하신 정답파일의 경로입니다. 자동으로 매겨지는 부분으로 그대로 놔두시면 됩니다.
