@@ -1,4 +1,5 @@
 # author: Jeiyoon
+# author: Jeiyoon
 from tqdm import tqdm
 from pathlib import Path
 
@@ -36,8 +37,9 @@ for task_name in task_list:
         else:
             continue
 
-
     df_normed_wav_cut = pd.DataFrame(normed_wav_cut_data)
     print(df_normed_wav_cut)
     print(len(df_normed_wav_cut['name']))
     df_normed_wav_cut.to_csv(f"{normed_wav_save_path}/" + task_name + ".csv", sep="\t", encoding="utf-8", index=False)
+
+    normed_wav_cut_data.clear()
