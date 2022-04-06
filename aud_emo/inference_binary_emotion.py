@@ -27,50 +27,6 @@ from transformers.models.wav2vec2.modeling_wav2vec2 import (
     Wav2Vec2Model
 )
 
-"""
-(1) normalize audio
-"""
-# wav_data = []
-# unnorm_tvsum_path = "/root/clip/video_datasets/wav_cut"
-# norm_tvsum_path = "/root/clip/video_datasets/normed_wav_cut"
-#
-# for path in tqdm(Path(unnorm_tvsum_path).glob("**/*.wav")):
-#     name = str(path).split('/')[5]
-#     samplerate, data = wavfile.read(path)
-#     scaled_data = np.float32(np.array(data / np.max(np.abs(data))))
-#
-#     # wavfile.write(norm_ravdess_path + "/" + name, samplerate, scaled_data)
-#     wavfile.write(norm_tvsum_path + "/" + name, 44100, scaled_data)
-
-"""
-(2) Generate CSV file
-"""
-# normed_wav_cut_path = "/root/clip/video_datasets/normed_wav_cut"
-# normed_wav_cut_data = []
-# normed_wav_save_path = "/root/clip/video_datasets/normed_wav_cut_csv"
-#
-# for path in tqdm(Path(normed_wav_cut_path).glob("**/*.wav")):
-#     name = str(path).split('/')[5].replace('.wav', '')
-#     idx = str(path).split('_')[-1].replace('.wav', '')
-#
-#     if "AwmHb44_ouw" in name:
-#         try:
-#               normed_wav_cut_data.append({
-#                   "index": int(idx),
-#                   "name": name,
-#                   "path": path,
-#                   "emotion": 'masked'
-#               })
-#         except Exception as e:
-#             pass
-#     else:
-#         continue
-#
-#
-# df_normed_wav_cut = pd.DataFrame(normed_wav_cut_data)
-# print(df_normed_wav_cut)
-# print(len(df_normed_wav_cut['name']))
-# df_normed_wav_cut.to_csv(f"{normed_wav_save_path}/AwmHb44_ouw.csv", sep="\t", encoding="utf-8", index=False)
 
 @dataclass
 class SpeechClassifierOutput(ModelOutput):
@@ -183,7 +139,6 @@ class Wav2Vec2ForSpeechClassification(Wav2Vec2PreTrainedModel):
             attentions=outputs.attentions,
         )
 
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # model_name_or_path = "/content/drive/My Drive/wav2vec2-large-xlsr-53-english/checkpoint-280"
 model_name_or_path = "/root/clip/wav2vec2-large-xlsr-53-english/checkpoint-280"
@@ -192,11 +147,6 @@ processor = Wav2Vec2Processor.from_pretrained(model_name_or_path)
 sampling_rate = processor.feature_extractor.sampling_rate
 model = Wav2Vec2ForSpeechClassification.from_pretrained(model_name_or_path).to(device)
 
-# def speech_file_to_array_fn(path, sampling_rate):
-#     speech_array, _sampling_rate = torchaudio.load(path)
-#     resampler = torchaudio.transforms.Resample(_sampling_rate)
-#     speech = resampler(speech_array).squeeze().numpy()
-#     return speech
 
 def speech_file_to_array_fn(path, sampling_rate):
     speech_array, _sampling_rate = torchaudio.load(path)
@@ -227,85 +177,58 @@ def predict(path, sampling_rate):
     return outputs
 
 
-# STYLES = """
-# <style>
-# div.display_data {
-#     margin: 0 auto;
-#     max-width: 500px;
-# }
-# table.xxx {
-#     margin: 50px !important;
-#     float: right !important;
-#     clear: both !important;
-# }
-# table.xxx td {
-#     min-width: 300px !important;
-#     text-align: center !important;
-# }
-# </style>
-# """.strip()
-
 def prediction(df_row):
     path, emotion = df_row["path"], df_row["emotion"]
-    df = pd.DataFrame([{"Emotion": emotion, "Sentence": "    "}])
-
-    setup = {
-        'border': 2,
-        'show_dimensions': True,
-        'justify': 'center',
-        'classes': 'xxx',
-        'escape': False,
-    }
-    # ipd.display(ipd.HTML(STYLES + df.to_html(**setup) + "<br />"))
-    # speech, sr = torchaudio.load(path)
-    # speech = speech[0].numpy().squeeze()
-    # speech = librosa.resample(np.asarray(speech), sr, sampling_rate)
-    # ipd.display(ipd.Audio(data=np.asarray(speech), autoplay=True, rate=sampling_rate))
 
     outputs = predict(path, sampling_rate) # sr = 16000
-    # r = pd.DataFrame(outputs)
-    # ipd.display(ipd.HTML(STYLES + r.to_html(**setup) + "<br />"))
 
     # [{'Emotion': 'emotion', 'Score': '0.1%'}, {'Emotion': 'neutral', 'Score': '99.9%'}]
     # print("outputs: ", outputs)
     if float(outputs[0]['Score'].replace("%", "")) > float(outputs[1]['Score'].replace("%", "")): # emotion
-        return 5
+        return 5 # max importance score
     else: # neutral
         return 0
 
     # return outputs
 
-# test_rav = pd.read_csv("/root/clip/ravdess_save_path/validation.csv", sep="\t")
-# test_rav_iloc = test_rav.iloc[0]
-# print(prediction(test_rav_iloc))
 
-test_tv = pd.read_csv("/root/clip/video_datasets/normed_wav_cut_csv/AwmHb44_ouw.csv", sep="\t")
-# test_tv['name'] = sorted(test_tv['name'])
-test_tv = test_tv.sort_values(by='index' ,ascending = True)
+test_tvsum_path = "/root/clip/video_datasets/normed_wav_cut_csv"
+task_emotion_dict = defaultdict()
 
-emotion_per_second = []
+# e.g.) path: /root/clip/video_datasets/normed_wav_cut_csv/Bhxk-O1Y7Ho.csv
+for path in Path(test_tvsum_path).glob("**/*.csv"): # 50
+    test_tv = pd.read_csv(path, sep="\t")
+    # test_tv['name'] = sorted(test_tv['name'])
+    test_tv = test_tv.sort_values(by='index', ascending=True)
 
-for idx in tqdm(range(len(test_tv['name']))):
-    # four seconds / mean
-    # emotion_per_second.append(prediction(test_tv.iloc[idx]))
-    emotion_per_second.append(0)
-    emotion_per_second.append(prediction(test_tv.iloc[idx]))
-    emotion_per_second.append(prediction(test_tv.iloc[idx]))
-    emotion_per_second.append(0)
-    # emotion_per_second.append(prediction(test_tv.iloc[idx]))
+    emotion_per_second = []
+    task_name = str(path).split('/')[5].replace(".csv", "")
+    print("task_name: ", task_name)
 
-print(Counter(emotion_per_second))
-print("emotion_per_second: ", emotion_per_second)
+    # {'AwmHb44_ouw': 354, '98MoyGZKHXc': 187, 'J0nA4VgnoCo': 584, 'gzDbaEs1Rlg': 288, 'XzYM3PfTM4w': 111, 'HT5vyqe0Xaw': 322, 'sTEELN-vY30': 149, 'vdmoEJ5YbrQ': 329, 'xwqBXPGE9pQ': 233, 'akI8YFjEmUw': 133, 'i3wAGJaaktw': 156, 'Bhxk-O1Y7Ho': 450, '0tmA_C6XwfM': 141, '3eYKfiOEJNs': 194, 'xxdtq8mxegs': 144, 'WG0MBPpPC6I': 397, 'Hl-__g2gn_A': 243, 'Yi4Ij2NM7U4': 405, '37rzWOQsNIw': 191, 'LRw_obCPUt0': 260, 'cjibtmSLxQ4': 647, 'b626MiF1ew4': 235, 'XkqCExn6_Us': 188, 'GsAD1KT1xo8': 145, 'PJrm840pAUI': 274, '91IHQYk1IQM': 110, 'RBCABdttQmI': 364, 'z_6gVvQb2d0': 276, 'fWutDQy1nnY': 585, '4wU_LUjG5Ic': 167, 'VuWGsYPqAX8': 216, 'JKpqYvAdIsw': 152, 'xmEERLqJ2kU': 446, 'byxOvuiIJV0': 154, '_xMr-HKMfVA': 149, 'WxtbjNsCQ8A': 265, 'uGu_10sucQo': 167, 'EE-bNr36nyA': 98, 'Se3oxnaPsz0': 138, 'oDXZc0tZe04': 380, 'qqR6AEXwxoQ': 269, 'EYqVtI9YWJA': 198, 'eQu1rNs0an0': 164, 'JgHubY5Vw3Y': 143, 'iVt07TCkFM0': 104, 'E11zDS9XGzg': 510, 'NyBmCxDoHJU': 189, 'kLxoNp-UchI': 130, 'jcoYJXDG9sw': 199, '-esJrBWj2d8': 230}
+    # e.g.) 'Bhxk-O1Y7Ho': 450 / 7:30
+    for idx in tqdm(range(len(test_tv['name']))):
+        # four seconds / mean
+        # emotion_per_second.append(prediction(test_tv.iloc[idx]))
+        emotion_per_second.append(prediction(test_tv.iloc[idx]))
+        emotion_per_second.append(0)
+        emotion_per_second.append(prediction(test_tv.iloc[idx]))
+        emotion_per_second.append(0)
+        # emotion_per_second.append(prediction(test_tv.iloc[idx]))
+
+    print(Counter(emotion_per_second))
+    print("emotion_per_second: ", emotion_per_second)
+    task_emotion_dict[task_name] = emotion_per_second
 
 """
 importance score
 """
-wav_cut_path = "/root/clip/video_datasets/normed_wav_cut"
+wav_cut_path = "/root/clip/video_datasets/wav_cut"
 tvsum_anno_path = "/root/clip/ydata-tvsum50-anno.tsv"
 tvsum_info_path = "/root/clip/ydata-tvsum50-info.tsv"
 
 df = pd.read_csv(tvsum_anno_path, sep='\t', names=["video_name", "task", "importance_score"])
-print(df)
+# print(df)
 
 # 'video_id', 'length'
 df_info = pd.read_csv(tvsum_info_path, sep='\t')
@@ -326,13 +249,17 @@ print(video_info_dict)
 score_per_second = []
 avg_importance_score = defaultdict()
 video_counter = Counter(df['video_name'])
+task_score_per_second = defaultdict()
 
 for idx in tqdm(range(len(df['video_name']))): # 1000
-    print("idx: ", idx)
-    print("df['video_name'][idx]: ", df['video_name'][idx])
+    # print("idx: ", idx)
+    # print("df['video_name'][idx]: ", df['video_name'][idx])
     # print("df['task'][idx]: ", df['task'][idx])
 
     importance_score = df['importance_score'][idx].split(',')
+
+    task_name = str(df['video_name'][idx])
+
 
     for fps in range(1, len(importance_score) + 1):
         tvsum_fps = round((len(importance_score) / video_info_dict[str(df['video_name'][idx])]) * 2)
@@ -342,29 +269,27 @@ for idx in tqdm(range(len(df['video_name']))): # 1000
             score_per_second.append(importance_score[fps])
             score_per_second.append(importance_score[fps])
 
-
-    if str(df['video_name'][idx]) in avg_importance_score:
-        avg_importance_score[str(df['video_name'][idx])] += np.float32(np.array(score_per_second))
+    if task_name in task_score_per_second:
+        task_score_per_second[task_name] += np.float32(np.array(score_per_second))
     else:
-        avg_importance_score[str(df['video_name'][idx])] = np.float32(np.array(score_per_second))
+        task_score_per_second[task_name] = np.float32(np.array(score_per_second))
 
-    # print("len(score_per_second) :", len(score_per_second))
     score_per_second.clear()
 
-    if idx == 19:
-        break
-
 # mean
-# AwmHb44_ouw
+for v_name in task_score_per_second: # e.g.) v_name = "AwmHb44_ouw"
+    avg_importance_score[v_name] = task_score_per_second[v_name] / video_counter[v_name]
+
+# visualization
 for v_name in avg_importance_score:
-    avg_importance_score[v_name] = avg_importance_score[v_name] / video_counter[v_name]
+    x = np.arange(0, avg_importance_score[v_name].shape[0])
 
+    plt.figure(figsize=(18, 6))
+    plt.bar(x, task_emotion_dict[v_name], color='peachpuff', alpha=0.9)
+    plt.plot(x, avg_importance_score[v_name], color = 'firebrick')
+    plt.legend(['importance score', 'emotion'])
 
-x = np.arange(0, len(emotion_per_second))
-plt.figure(figsize=(18, 6))
-plt.bar(x, emotion_per_second, color = 'peachpuff', alpha = 0.9)
-plt.plot(x, avg_importance_score["AwmHb44_ouw"], color = 'firebrick') #
-plt.legend(['importance score', 'emotion'])
-plt.xlabel("Times (s)")
-plt.ylabel("Importance Score")
-plt.show()
+    plt.title(v_name, fontsize = 15)
+    plt.xlabel("Times (s)")
+    plt.ylabel("Importance Score")
+    plt.show()
