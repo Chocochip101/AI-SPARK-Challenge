@@ -281,15 +281,31 @@ for v_name in task_score_per_second: # e.g.) v_name = "AwmHb44_ouw"
     avg_importance_score[v_name] = task_score_per_second[v_name] / video_counter[v_name]
 
 # visualization
-for v_name in avg_importance_score:
-    x = np.arange(0, avg_importance_score[v_name].shape[0])
+fig_save_path = "/root/clip/video_datasets/emotion_png/"
 
+for v_name in avg_importance_score:
+    print(v_name)
+
+    # TypeError: only integer scalar arrays can be converted to a scalar index
+    len_emo = len(task_emotion_dict[v_name])
+    len_score = avg_importance_score[v_name].shape[0]
+
+    if len_emo != len_score:
+        if len_emo > len_score:
+            cast = avg_importance_score[v_name][-abs(len_score - len_emo):]
+            avg_importance_score[v_name] = np.concatenate((avg_importance_score[v_name], cast))
+        else: #len_emo < len_score
+            cast = [0] * abs(len_emo - len_score)
+            task_emotion_dict[v_name].extend(cast)
+
+    x = np.arange(0, avg_importance_score[v_name].shape[0])
     plt.figure(figsize=(18, 6))
     plt.bar(x, task_emotion_dict[v_name], color='peachpuff', alpha=0.9)
-    plt.plot(x, avg_importance_score[v_name], color = 'firebrick')
-    plt.legend(['importance score', 'emotion'])
+    plt.plot(x, np.float32(avg_importance_score[v_name]), color = 'firebrick')
+    plt.legend(['humans', 'emotion'])
 
     plt.title(v_name, fontsize = 15)
     plt.xlabel("Times (s)")
     plt.ylabel("Importance Score")
+    plt.savefig(fig_save_path + v_name + ".png", dpi = 300)
     plt.show()
