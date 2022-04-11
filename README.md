@@ -5,7 +5,7 @@
 
 ## 참여인원
 
-- 권기호, 이문기, 허주희, 박제윤
+- [권기호](https://chocochip101.tistory.com/), [이문기](https://blog.naver.com/ansrl23), [허주희](https://heojuhuigitblog.netlify.app/), [박제윤](https://jeiyoon.github.io/)
 
 
 ## 일정
