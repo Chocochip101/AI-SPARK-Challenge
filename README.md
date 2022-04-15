@@ -2,7 +2,7 @@
 제3회 연구개발특구 AI SPARK 챌린지
 
 <img src = "./0322.png" width="80%">
-<img src = "./2nd_place.png" width="80%">
+<img src = "./wave_2nd_place.png" width="80%">
 
 
 ## 참여인원
